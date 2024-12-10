@@ -1,0 +1,28 @@
+[
+  {
+    "inputs": [],
+    "name": "PRICE_FEED_TOKEN_BELOW_ZERO",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRICE_FEED_TOKEN_NOT_SUPPORTED",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,185 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "activeLoansCount",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountBorrowedInUSD",
+        "type": "uint256"
+      }
+    ],
+    "name": "borrowLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountInUSD",
+        "type": "uint256"
+      }
+    ],
+    "name": "dropCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getActivity",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "borrowedTimes",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "lentTimes",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedVolume",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lentVolume",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastActive",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralVolume",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "interestPaidVolume",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "defaultedTimes",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "defaultedVolume",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "firstBorrowAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "activeLoans",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct ActivityLibrary.Model",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "isDefaulter",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "interestPaidInUSD",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "completed",
+        "type": "bool"
+      }
+    ],
+    "name": "repayLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
